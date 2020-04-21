@@ -1,0 +1,12 @@
+[Unit]
+Description=Prysm-Beacon
+
+[Service]
+Type=simple
+User=vin
+ExecStart=/home/vin/prysm/prysm.sh beacon-chain --p2p-max-peers=100 --enable-byte-mempool
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
