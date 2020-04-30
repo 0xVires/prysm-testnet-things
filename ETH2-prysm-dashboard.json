@@ -17,7 +17,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": 2,
-  "iteration": 1588233678673,
+  "iteration": 1588264199149,
   "links": [],
   "panels": [
     {
@@ -634,7 +634,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "sum(deriv(validator_balance[1h])*3600)",
+          "expr": "sum(deriv(validator_balance[15m])*3600)",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -810,7 +810,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "sum(deriv(validator_balance[1d])*86400)",
+          "expr": "sum(deriv(validator_balance[3h])*86400)",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -983,7 +983,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "sum(deriv(validator_balance[1w])*604800)",
+          "expr": "sum(deriv(validator_balance[1d])*604800)",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -1153,7 +1153,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "expr": "sum(deriv(validator_balance[30d])*2592000)",
+          "expr": "sum(deriv(validator_balance[1w])*2592000)",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -3898,7 +3898,7 @@
     ]
   },
   "time": {
-    "from": "now-12h",
+    "from": "now-6h",
     "to": "now"
   },
   "timepicker": {
